@@ -1,11 +1,11 @@
-import ex_02_SalesDatabase.Customer;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.io.IOException;
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         EntityManagerFactory entityManagerFactory =
                 Persistence.createEntityManagerFactory("PU_name");
@@ -13,6 +13,7 @@ public class Main {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         entityManager.getTransaction().begin();
+
 
 
 
